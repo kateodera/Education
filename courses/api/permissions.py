@@ -1,5 +1,6 @@
 from rest_framework.permissions import BasePermission
-from ..models import Content
+from ..models import Content, Module, Course
+from rest_framework import serializers
 
 
 class IsEnrolled(BasePermission):
